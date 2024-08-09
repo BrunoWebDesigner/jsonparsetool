@@ -40,10 +40,6 @@ The project consists of three main files:
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
 ## Acknowledgements
 
 This tool was created to aid in the process of checking and troubleshooting logs from the APIs of the company I am currently working at. The simple approach using HTML, CSS, and JavaScript makes it easy to use and modify as needed.
