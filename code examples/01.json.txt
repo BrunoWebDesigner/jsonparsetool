@@ -1,0 +1,193 @@
+{
+  "_index": "live-logs:stack-hub88-main-2024.30-007891",
+  "_type": "_doc",
+  "_id": "38394259745338691109955308562898622199996687071792201777",
+  "_version": 1,
+  "_score": 1,
+  "_ignored": [
+    "headers.X-Hub88-Signature.keyword",
+    "response.keyword",
+    "body.keyword"
+  ],
+  "_source": {
+    "message": "fetch_game_url failed",
+    "@timestamp": "2024-07-22T14:22:31.041Z",
+    "env_name": "h8zgl",
+    "stack_name": "hub88",
+    "service_name": "main",
+    "aws_region": "eu-central-1",
+    "logStream": "95430b837b3e2b188b6558e5f54e57a089b34b45dccc852054d7599ef1893e32",
+    "cloudwatch_logs.log_group": "h8zgl-hub88_main",
+    "containerId": "95430b837b3e",
+    "application": "hub88",
+    "body": "{\"user\":\"1721657933_UGX\",\"token\":\"A5BD58D16BCCF6AFEB03B315B5C3D6E3C5BA75BE\",\"sub_partner_id\":\"Bender B2B\",\"platform\":\"GPL_DESKTOP\",\"operator_id\":\"hub88_betikauganda_admin\",\"meta\":{\"recommendation_id\":\"\",\"game_currency_code\":\"\"},\"lobby_url\":\"https://bender-b2b.hub88.io\",\"lang\":\"en\",\"ip\":\"0.0.0.0\",\"game_code\":\"SG12Zodiacs\",\"display_unit\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"currency\":\"UGX\",\"country\":\"DE\"}",
+    "contract_id": 1858,
+    "contract_name": " Habanero B2B EU Betika Uganda",
+    "file": "lib/hub88/supplier_api/instances/generic_json.ex",
+    "function": "fetch_game_url/2",
+    "gl": "#PID<0.4975.0>",
+    "headers": {
+      "X-Hub88-Signature": "BinLxwuSwpfYdzy3KfNBlaplH7OBNM4v4PFf5ERdHPK8wX0C0LizlHiHFXaCfyX9sukBp2BHZI5rdhH779sKEMvL/Z5OnKv4L+/UPdMMdpuwDsNXRBVU/I/S2IKtWSCKJGeaYEDjoFLQFUpgDhpXplG+JU/xuvfPcf6f4ViRDij+qFzZAD9LHDnOfYl5qtXHq1lwLZ3we4w1CBfVTUwi7Wf2Bu+qtkYl6z9F7VT8t2ns8SKlVnxicbhDfzMHL2K6jw7wqKbevH1oqR5Ti5/85R9FaheL4QcHc1DovEw6VIthZHzVagfkqci2acUWC5OEjXKDqkYPNYsM8YFanc3M2g==",
+      "content-type": "application/json"
+    },
+    "level": "error",
+    "line": 156,
+    "module": "Elixir.Hub88.SupplierAPI.GenericJSON",
+    "pid": "#PID<0.31317.1125>",
+    "request_id": "F-SO93B6rlkQFfwC7brH",
+    "response": "{:ok, %HTTPoison.Response{status_code: 404, body: \"{\\\"error\\\":\\\"Could not match any integrations with Hub88 Operator 'hub88_betikauganda_admin' in Habanero +Play settings. Environment [e]\\\"}\", headers: [{\"Date\", \"Mon, 22 Jul 2024 14:22:31 GMT\"}, {\"Content-Type\", \"application/json; charset=utf-8\"}, {\"Content-Length\", \"135\"}, {\"Connection\", \"keep-alive\"}, {\"Cache-Control\", \"private\"}, {\"access-control-allow-origin\", \"*\"}, {\"access-control-allow-headers\", \"Origin, X-Requested-With, Content-Type, Accept, Authorization\"}, {\"x-xss-protection\", \"1; mode=block\"}, {\"x-content-type-options\", \"nosniff\"}, {\"p3p\", \"CP=\\\"CAO PSA OUR\\\"\"}, {\"CF-Cache-Status\", \"DYNAMIC\"}, {\"Server\", \"cloudflare\"}, {\"CF-RAY\", \"8a741553b8598ec7-FRA\"}, {\"alt-svc\", \"h3=\\\":443\\\"; ma=86400\"}], request_url: \"https://app-e.insvr.com/service/hosted/hub/game/url\", request: %HTTPoison.Request{method: :post, url: \"https://app-e.insvr.com/service/hosted/hub/game/url\", headers: [{\"X-Hub88-Signature\", \"BinLxwuSwpfYdzy3KfNBlaplH7OBNM4v4PFf5ERdHPK8wX0C0LizlHiHFXaCfyX9sukBp2BHZI5rdhH779sKEMvL/Z5OnKv4L+/UPdMMdpuwDsNXRBVU/I/S2IKtWSCKJGeaYEDjoFLQFUpgDhpXplG+JU/xuvfPcf6f4ViRDij+qFzZAD9LHDnOfYl5qtXHq1lwLZ3we4w1CBfVTUwi7Wf2Bu+qtkYl6z9F7VT8t2ns8SKlVnxicbhDfzMHL2K6jw7wqKbevH1oqR5Ti5/85R9FaheL4QcHc1DovEw6VIthZHzVagfkqci2acUWC5OEjXKDqkYPNYsM8YFanc3M2g==\"}, {\"content-type\", \"application/json\"}], body: \"{\\\"user\\\":\\\"1721657933_UGX\\\",\\\"token\\\":\\\"A5BD58D16BCCF6AFEB03B315B5C3D6E3C5BA75BE\\\",\\\"sub_partner_id\\\":\\\"Bender B2B\\\",\\\"platform\\\":\\\"GPL_DESKTOP\\\",\\\"operator_id\\\":\\\"hub88_betikauganda_admin\\\",\\\"meta\\\":{\\\"recommendation_id\\\":\\\"\\\",\\\"game_currency_code\\\":\\\"\\\"},\\\"lobby_url\\\":\\\"https://bender-b2b.hub88.io\\\",\\\"lang\\\":\\\"en\\\",\\\"ip\\\":\\\"0.0.0.0\\\",\\\"game_code\\\":\\\"SG12Zodiacs\\\",\\\"display_unit\\\":\\\"UGX\\\",\\\"deposit_url\\\":\\\"https://bender-b2b.hub88.io\\\",\\\"currency\\\":\\\"UGX\\\",\\\"country\\\":\\\"DE\\\"}\", params: %{}, options: [ssl: [], connect_timeout: 8000, recv_timeout: 8000]}}}",
+    "url": "https://app-e.insvr.com/service/hosted/hub/game/url",
+    "vsn": "3.0.515"
+  },
+  "fields": {
+    "function.keyword": [
+      "fetch_game_url/2"
+    ],
+    "contract_id": [
+      1858
+    ],
+    "cloudwatch_logs.log_group": [
+      "h8zgl-hub88_main"
+    ],
+    "cloudwatch_logs.log_group.keyword": [
+      "h8zgl-hub88_main"
+    ],
+    "pid": [
+      "#PID<0.31317.1125>"
+    ],
+    "file.keyword": [
+      "lib/hub88/supplier_api/instances/generic_json.ex"
+    ],
+    "body": [
+      "{\"user\":\"1721657933_UGX\",\"token\":\"A5BD58D16BCCF6AFEB03B315B5C3D6E3C5BA75BE\",\"sub_partner_id\":\"Bender B2B\",\"platform\":\"GPL_DESKTOP\",\"operator_id\":\"hub88_betikauganda_admin\",\"meta\":{\"recommendation_id\":\"\",\"game_currency_code\":\"\"},\"lobby_url\":\"https://bender-b2b.hub88.io\",\"lang\":\"en\",\"ip\":\"0.0.0.0\",\"game_code\":\"SG12Zodiacs\",\"display_unit\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"currency\":\"UGX\",\"country\":\"DE\"}"
+    ],
+    "headers.content-type.keyword": [
+      "application/json"
+    ],
+    "env_name": [
+      "h8zgl"
+    ],
+    "function": [
+      "fetch_game_url/2"
+    ],
+    "containerId": [
+      "95430b837b3e"
+    ],
+    "contract_name.keyword": [
+      " Habanero B2B EU Betika Uganda"
+    ],
+    "level": [
+      "error"
+    ],
+    "service_name": [
+      "main"
+    ],
+    "module": [
+      "Elixir.Hub88.SupplierAPI.GenericJSON"
+    ],
+    "headers.content-type": [
+      "application/json"
+    ],
+    "gl.keyword": [
+      "#PID<0.4975.0>"
+    ],
+    "message.keyword": [
+      "fetch_game_url failed"
+    ],
+    "logStream": [
+      "95430b837b3e2b188b6558e5f54e57a089b34b45dccc852054d7599ef1893e32"
+    ],
+    "stack_name": [
+      "hub88"
+    ],
+    "stack_name.keyword": [
+      "hub88"
+    ],
+    "env_name.keyword": [
+      "h8zgl"
+    ],
+    "line": [
+      156
+    ],
+    "vsn": [
+      "3.0.515"
+    ],
+    "pid.keyword": [
+      "#PID<0.31317.1125>"
+    ],
+    "file": [
+      "lib/hub88/supplier_api/instances/generic_json.ex"
+    ],
+    "application.keyword": [
+      "hub88"
+    ],
+    "containerId.keyword": [
+      "95430b837b3e"
+    ],
+    "request_id.keyword": [
+      "F-SO93B6rlkQFfwC7brH"
+    ],
+    "gl": [
+      "#PID<0.4975.0>"
+    ],
+    "aws_region.keyword": [
+      "eu-central-1"
+    ],
+    "module.keyword": [
+      "Elixir.Hub88.SupplierAPI.GenericJSON"
+    ],
+    "contract_name": [
+      " Habanero B2B EU Betika Uganda"
+    ],
+    "message": [
+      "fetch_game_url failed"
+    ],
+    "headers.X-Hub88-Signature": [
+      "BinLxwuSwpfYdzy3KfNBlaplH7OBNM4v4PFf5ERdHPK8wX0C0LizlHiHFXaCfyX9sukBp2BHZI5rdhH779sKEMvL/Z5OnKv4L+/UPdMMdpuwDsNXRBVU/I/S2IKtWSCKJGeaYEDjoFLQFUpgDhpXplG+JU/xuvfPcf6f4ViRDij+qFzZAD9LHDnOfYl5qtXHq1lwLZ3we4w1CBfVTUwi7Wf2Bu+qtkYl6z9F7VT8t2ns8SKlVnxicbhDfzMHL2K6jw7wqKbevH1oqR5Ti5/85R9FaheL4QcHc1DovEw6VIthZHzVagfkqci2acUWC5OEjXKDqkYPNYsM8YFanc3M2g=="
+    ],
+    "url.keyword": [
+      "https://app-e.insvr.com/service/hosted/hub/game/url"
+    ],
+    "url": [
+      "https://app-e.insvr.com/service/hosted/hub/game/url"
+    ],
+    "logStream.keyword": [
+      "95430b837b3e2b188b6558e5f54e57a089b34b45dccc852054d7599ef1893e32"
+    ],
+    "@timestamp": [
+      "2024-07-22T14:22:31.041Z"
+    ],
+    "level.keyword": [
+      "error"
+    ],
+    "application": [
+      "hub88"
+    ],
+    "aws_region": [
+      "eu-central-1"
+    ],
+    "response": [
+      "{:ok, %HTTPoison.Response{status_code: 404, body: \"{\\\"error\\\":\\\"Could not match any integrations with Hub88 Operator 'hub88_betikauganda_admin' in Habanero +Play settings. Environment [e]\\\"}\", headers: [{\"Date\", \"Mon, 22 Jul 2024 14:22:31 GMT\"}, {\"Content-Type\", \"application/json; charset=utf-8\"}, {\"Content-Length\", \"135\"}, {\"Connection\", \"keep-alive\"}, {\"Cache-Control\", \"private\"}, {\"access-control-allow-origin\", \"*\"}, {\"access-control-allow-headers\", \"Origin, X-Requested-With, Content-Type, Accept, Authorization\"}, {\"x-xss-protection\", \"1; mode=block\"}, {\"x-content-type-options\", \"nosniff\"}, {\"p3p\", \"CP=\\\"CAO PSA OUR\\\"\"}, {\"CF-Cache-Status\", \"DYNAMIC\"}, {\"Server\", \"cloudflare\"}, {\"CF-RAY\", \"8a741553b8598ec7-FRA\"}, {\"alt-svc\", \"h3=\\\":443\\\"; ma=86400\"}], request_url: \"https://app-e.insvr.com/service/hosted/hub/game/url\", request: %HTTPoison.Request{method: :post, url: \"https://app-e.insvr.com/service/hosted/hub/game/url\", headers: [{\"X-Hub88-Signature\", \"BinLxwuSwpfYdzy3KfNBlaplH7OBNM4v4PFf5ERdHPK8wX0C0LizlHiHFXaCfyX9sukBp2BHZI5rdhH779sKEMvL/Z5OnKv4L+/UPdMMdpuwDsNXRBVU/I/S2IKtWSCKJGeaYEDjoFLQFUpgDhpXplG+JU/xuvfPcf6f4ViRDij+qFzZAD9LHDnOfYl5qtXHq1lwLZ3we4w1CBfVTUwi7Wf2Bu+qtkYl6z9F7VT8t2ns8SKlVnxicbhDfzMHL2K6jw7wqKbevH1oqR5Ti5/85R9FaheL4QcHc1DovEw6VIthZHzVagfkqci2acUWC5OEjXKDqkYPNYsM8YFanc3M2g==\"}, {\"content-type\", \"application/json\"}], body: \"{\\\"user\\\":\\\"1721657933_UGX\\\",\\\"token\\\":\\\"A5BD58D16BCCF6AFEB03B315B5C3D6E3C5BA75BE\\\",\\\"sub_partner_id\\\":\\\"Bender B2B\\\",\\\"platform\\\":\\\"GPL_DESKTOP\\\",\\\"operator_id\\\":\\\"hub88_betikauganda_admin\\\",\\\"meta\\\":{\\\"recommendation_id\\\":\\\"\\\",\\\"game_currency_code\\\":\\\"\\\"},\\\"lobby_url\\\":\\\"https://bender-b2b.hub88.io\\\",\\\"lang\\\":\\\"en\\\",\\\"ip\\\":\\\"0.0.0.0\\\",\\\"game_code\\\":\\\"SG12Zodiacs\\\",\\\"display_unit\\\":\\\"UGX\\\",\\\"deposit_url\\\":\\\"https://bender-b2b.hub88.io\\\",\\\"currency\\\":\\\"UGX\\\",\\\"country\\\":\\\"DE\\\"}\", params: %{}, options: [ssl: [], connect_timeout: 8000, recv_timeout: 8000]}}}"
+    ],
+    "vsn.keyword": [
+      "3.0.515"
+    ],
+    "service_name.keyword": [
+      "main"
+    ],
+    "request_id": [
+      "F-SO93B6rlkQFfwC7brH"
+    ]
+  },
+  "ignored_field_values": {
+    "headers.X-Hub88-Signature.keyword": [
+      "BinLxwuSwpfYdzy3KfNBlaplH7OBNM4v4PFf5ERdHPK8wX0C0LizlHiHFXaCfyX9sukBp2BHZI5rdhH779sKEMvL/Z5OnKv4L+/UPdMMdpuwDsNXRBVU/I/S2IKtWSCKJGeaYEDjoFLQFUpgDhpXplG+JU/xuvfPcf6f4ViRDij+qFzZAD9LHDnOfYl5qtXHq1lwLZ3we4w1CBfVTUwi7Wf2Bu+qtkYl6z9F7VT8t2ns8SKlVnxicbhDfzMHL2K6jw7wqKbevH1oqR5Ti5/85R9FaheL4QcHc1DovEw6VIthZHzVagfkqci2acUWC5OEjXKDqkYPNYsM8YFanc3M2g=="
+    ],
+    "body.keyword": [
+      "{\"user\":\"1721657933_UGX\",\"token\":\"A5BD58D16BCCF6AFEB03B315B5C3D6E3C5BA75BE\",\"sub_partner_id\":\"Bender B2B\",\"platform\":\"GPL_DESKTOP\",\"operator_id\":\"hub88_betikauganda_admin\",\"meta\":{\"recommendation_id\":\"\",\"game_currency_code\":\"\"},\"lobby_url\":\"https://bender-b2b.hub88.io\",\"lang\":\"en\",\"ip\":\"0.0.0.0\",\"game_code\":\"SG12Zodiacs\",\"display_unit\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"currency\":\"UGX\",\"country\":\"DE\"}"
+    ],
+    "response.keyword": [
+      "{:ok, %HTTPoison.Response{status_code: 404, body: \"{\\\"error\\\":\\\"Could not match any integrations with Hub88 Operator 'hub88_betikauganda_admin' in Habanero +Play settings. Environment [e]\\\"}\", headers: [{\"Date\", \"Mon, 22 Jul 2024 14:22:31 GMT\"}, {\"Content-Type\", \"application/json; charset=utf-8\"}, {\"Content-Length\", \"135\"}, {\"Connection\", \"keep-alive\"}, {\"Cache-Control\", \"private\"}, {\"access-control-allow-origin\", \"*\"}, {\"access-control-allow-headers\", \"Origin, X-Requested-With, Content-Type, Accept, Authorization\"}, {\"x-xss-protection\", \"1; mode=block\"}, {\"x-content-type-options\", \"nosniff\"}, {\"p3p\", \"CP=\\\"CAO PSA OUR\\\"\"}, {\"CF-Cache-Status\", \"DYNAMIC\"}, {\"Server\", \"cloudflare\"}, {\"CF-RAY\", \"8a741553b8598ec7-FRA\"}, {\"alt-svc\", \"h3=\\\":443\\\"; ma=86400\"}], request_url: \"https://app-e.insvr.com/service/hosted/hub/game/url\", request: %HTTPoison.Request{method: :post, url: \"https://app-e.insvr.com/service/hosted/hub/game/url\", headers: [{\"X-Hub88-Signature\", \"BinLxwuSwpfYdzy3KfNBlaplH7OBNM4v4PFf5ERdHPK8wX0C0LizlHiHFXaCfyX9sukBp2BHZI5rdhH779sKEMvL/Z5OnKv4L+/UPdMMdpuwDsNXRBVU/I/S2IKtWSCKJGeaYEDjoFLQFUpgDhpXplG+JU/xuvfPcf6f4ViRDij+qFzZAD9LHDnOfYl5qtXHq1lwLZ3we4w1CBfVTUwi7Wf2Bu+qtkYl6z9F7VT8t2ns8SKlVnxicbhDfzMHL2K6jw7wqKbevH1oqR5Ti5/85R9FaheL4QcHc1DovEw6VIthZHzVagfkqci2acUWC5OEjXKDqkYPNYsM8YFanc3M2g==\"}, {\"content-type\", \"application/json\"}], body: \"{\\\"user\\\":\\\"1721657933_UGX\\\",\\\"token\\\":\\\"A5BD58D16BCCF6AFEB03B315B5C3D6E3C5BA75BE\\\",\\\"sub_partner_id\\\":\\\"Bender B2B\\\",\\\"platform\\\":\\\"GPL_DESKTOP\\\",\\\"operator_id\\\":\\\"hub88_betikauganda_admin\\\",\\\"meta\\\":{\\\"recommendation_id\\\":\\\"\\\",\\\"game_currency_code\\\":\\\"\\\"},\\\"lobby_url\\\":\\\"https://bender-b2b.hub88.io\\\",\\\"lang\\\":\\\"en\\\",\\\"ip\\\":\\\"0.0.0.0\\\",\\\"game_code\\\":\\\"SG12Zodiacs\\\",\\\"display_unit\\\":\\\"UGX\\\",\\\"deposit_url\\\":\\\"https://bender-b2b.hub88.io\\\",\\\"currency\\\":\\\"UGX\\\",\\\"country\\\":\\\"DE\\\"}\", params: %{}, options: [ssl: [], connect_timeout: 8000, recv_timeout: 8000]}}}"
+    ]
+  }
+}

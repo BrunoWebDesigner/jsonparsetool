@@ -1,0 +1,223 @@
+{
+  "_index": "live-logs:stack-hub88-main-2024.30-007891",
+  "_type": "_doc",
+  "_id": "38394259745338691109955308562898622199996687071792201778",
+  "_version": 1,
+  "_score": 1,
+  "_ignored": [
+    "request_body.keyword"
+  ],
+  "_source": {
+    "message": "response from endpoint /private_api/fetch_game_url in 83 ms",
+    "@timestamp": "2024-07-22T14:22:31.041Z",
+    "env_name": "h8zgl",
+    "stack_name": "hub88",
+    "service_name": "main",
+    "aws_region": "eu-central-1",
+    "logStream": "95430b837b3e2b188b6558e5f54e57a089b34b45dccc852054d7599ef1893e32",
+    "cloudwatch_logs.log_group": "h8zgl-hub88_main",
+    "containerId": "95430b837b3e",
+    "application": "hub88",
+    "duration": 83884,
+    "file": "lib/hub88_web/plugs/logger.ex",
+    "function": "log_base/2",
+    "gl": "#PID<0.4975.0>",
+    "level": "info",
+    "line": 94,
+    "method": "POST",
+    "module": "Elixir.Hub88Web.Logger",
+    "path": "/private_api/fetch_game_url",
+    "pid": "#PID<0.31317.1125>",
+    "query_string": "",
+    "request_body": "{\"player_ip\":\"81.20.149.200\",\"country_code\":\"DE\",\"currency_code\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"display_unit\":\"UGX\",\"game_code\":\"hbo_12zodiacs\",\"game_currency_code\":\"\",\"ip\":\"0.0.0.0\",\"lang\":\"en\",\"lobby_url\":\"https://bender-b2b.hub88.io\",\"meta\":\"{\\\"recommendation_id\\\":\\\"\\\"}\",\"operator_id\":\"220\",\"platform\":\"GPL_DESKTOP\",\"redirect\":\"true\",\"sub_partner_id\":\"\",\"token\":\"f1f9735c-8931-47be-b985-1e4504545fce\",\"user\":\"1721657933_UGX\"}",
+    "request_headers": [
+      "authorization:Basic MzM1NWFlMGItN2FiNS04ZDk5LTljNzYtNDNhNmU1MGMyZWQwOmEzMWY3MWEyLTc2NGQtMGI5Ni1iMDQ1LTQ3YTY1Y2Y4ZjhiMA==",
+      "content-length:449",
+      "content-type:application/json",
+      "host:api.hub88.io",
+      "user-agent:hackney/1.18.1",
+      "x-amzn-trace-id:Root=1-669e6b26-3eb746d117ed1dd21d39673e",
+      "x-forwarded-for:3.120.166.55",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "request_id": "F-SO93B6rlkQFfwC7brH",
+    "response_body": "https://launcher-eu1.fh8labs.com/games/error_page?message=Something+went+wrong%2C+please+reload+the+page.&request_id=F-SO93B6rlkQFfwC7brH",
+    "response_duration": 83,
+    "status": 200,
+    "vsn": "3.0.515"
+  },
+  "fields": {
+    "function.keyword": [
+      "log_base/2"
+    ],
+    "cloudwatch_logs.log_group": [
+      "h8zgl-hub88_main"
+    ],
+    "cloudwatch_logs.log_group.keyword": [
+      "h8zgl-hub88_main"
+    ],
+    "response_body": [
+      "https://launcher-eu1.fh8labs.com/games/error_page?message=Something+went+wrong%2C+please+reload+the+page.&request_id=F-SO93B6rlkQFfwC7brH"
+    ],
+    "pid": [
+      "#PID<0.31317.1125>"
+    ],
+    "file.keyword": [
+      "lib/hub88_web/plugs/logger.ex"
+    ],
+    "path": [
+      "/private_api/fetch_game_url"
+    ],
+    "env_name": [
+      "h8zgl"
+    ],
+    "function": [
+      "log_base/2"
+    ],
+    "containerId": [
+      "95430b837b3e"
+    ],
+    "response_duration": [
+      83
+    ],
+    "request_headers.keyword": [
+      "authorization:Basic MzM1NWFlMGItN2FiNS04ZDk5LTljNzYtNDNhNmU1MGMyZWQwOmEzMWY3MWEyLTc2NGQtMGI5Ni1iMDQ1LTQ3YTY1Y2Y4ZjhiMA==",
+      "content-length:449",
+      "content-type:application/json",
+      "host:api.hub88.io",
+      "user-agent:hackney/1.18.1",
+      "x-amzn-trace-id:Root=1-669e6b26-3eb746d117ed1dd21d39673e",
+      "x-forwarded-for:3.120.166.55",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "method": [
+      "POST"
+    ],
+    "level": [
+      "info"
+    ],
+    "service_name": [
+      "main"
+    ],
+    "module": [
+      "Elixir.Hub88Web.Logger"
+    ],
+    "query_string.keyword": [
+      ""
+    ],
+    "response_body.keyword": [
+      "https://launcher-eu1.fh8labs.com/games/error_page?message=Something+went+wrong%2C+please+reload+the+page.&request_id=F-SO93B6rlkQFfwC7brH"
+    ],
+    "gl.keyword": [
+      "#PID<0.4975.0>"
+    ],
+    "message.keyword": [
+      "response from endpoint /private_api/fetch_game_url in 83 ms"
+    ],
+    "request_headers": [
+      "authorization:Basic MzM1NWFlMGItN2FiNS04ZDk5LTljNzYtNDNhNmU1MGMyZWQwOmEzMWY3MWEyLTc2NGQtMGI5Ni1iMDQ1LTQ3YTY1Y2Y4ZjhiMA==",
+      "content-length:449",
+      "content-type:application/json",
+      "host:api.hub88.io",
+      "user-agent:hackney/1.18.1",
+      "x-amzn-trace-id:Root=1-669e6b26-3eb746d117ed1dd21d39673e",
+      "x-forwarded-for:3.120.166.55",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "logStream": [
+      "95430b837b3e2b188b6558e5f54e57a089b34b45dccc852054d7599ef1893e32"
+    ],
+    "stack_name": [
+      "hub88"
+    ],
+    "status": [
+      200
+    ],
+    "stack_name.keyword": [
+      "hub88"
+    ],
+    "env_name.keyword": [
+      "h8zgl"
+    ],
+    "line": [
+      94
+    ],
+    "duration": [
+      83884
+    ],
+    "vsn": [
+      "3.0.515"
+    ],
+    "pid.keyword": [
+      "#PID<0.31317.1125>"
+    ],
+    "file": [
+      "lib/hub88_web/plugs/logger.ex"
+    ],
+    "application.keyword": [
+      "hub88"
+    ],
+    "method.keyword": [
+      "POST"
+    ],
+    "containerId.keyword": [
+      "95430b837b3e"
+    ],
+    "request_id.keyword": [
+      "F-SO93B6rlkQFfwC7brH"
+    ],
+    "gl": [
+      "#PID<0.4975.0>"
+    ],
+    "aws_region.keyword": [
+      "eu-central-1"
+    ],
+    "module.keyword": [
+      "Elixir.Hub88Web.Logger"
+    ],
+    "message": [
+      "response from endpoint /private_api/fetch_game_url in 83 ms"
+    ],
+    "logStream.keyword": [
+      "95430b837b3e2b188b6558e5f54e57a089b34b45dccc852054d7599ef1893e32"
+    ],
+    "@timestamp": [
+      "2024-07-22T14:22:31.041Z"
+    ],
+    "level.keyword": [
+      "info"
+    ],
+    "request_body": [
+      "{\"player_ip\":\"81.20.149.200\",\"country_code\":\"DE\",\"currency_code\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"display_unit\":\"UGX\",\"game_code\":\"hbo_12zodiacs\",\"game_currency_code\":\"\",\"ip\":\"0.0.0.0\",\"lang\":\"en\",\"lobby_url\":\"https://bender-b2b.hub88.io\",\"meta\":\"{\\\"recommendation_id\\\":\\\"\\\"}\",\"operator_id\":\"220\",\"platform\":\"GPL_DESKTOP\",\"redirect\":\"true\",\"sub_partner_id\":\"\",\"token\":\"f1f9735c-8931-47be-b985-1e4504545fce\",\"user\":\"1721657933_UGX\"}"
+    ],
+    "application": [
+      "hub88"
+    ],
+    "aws_region": [
+      "eu-central-1"
+    ],
+    "vsn.keyword": [
+      "3.0.515"
+    ],
+    "service_name.keyword": [
+      "main"
+    ],
+    "request_id": [
+      "F-SO93B6rlkQFfwC7brH"
+    ],
+    "query_string": [
+      ""
+    ],
+    "path.keyword": [
+      "/private_api/fetch_game_url"
+    ]
+  },
+  "ignored_field_values": {
+    "request_body.keyword": [
+      "{\"player_ip\":\"81.20.149.200\",\"country_code\":\"DE\",\"currency_code\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"display_unit\":\"UGX\",\"game_code\":\"hbo_12zodiacs\",\"game_currency_code\":\"\",\"ip\":\"0.0.0.0\",\"lang\":\"en\",\"lobby_url\":\"https://bender-b2b.hub88.io\",\"meta\":\"{\\\"recommendation_id\\\":\\\"\\\"}\",\"operator_id\":\"220\",\"platform\":\"GPL_DESKTOP\",\"redirect\":\"true\",\"sub_partner_id\":\"\",\"token\":\"f1f9735c-8931-47be-b985-1e4504545fce\",\"user\":\"1721657933_UGX\"}"
+    ]
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "_index": "live-logs:stack-hub88-main-pgp-2024.30-000094",
+  "_type": "_doc",
+  "_id": "38394498255109099684352352441021486041484760949324448176",
+  "_version": 1,
+  "_score": 1,
+  "_ignored": [
+    "inner_logs.keyword",
+    "gears.keyword"
+  ],
+  "_source": {
+    "message": "Operator request F-SYsZKWdmumhyIkEKkG",
+    "@timestamp": "2024-07-22T17:20:46.188Z",
+    "env_name": "h8zgl",
+    "stack_name": "hub88",
+    "service_name": "main-pgp",
+    "aws_region": "eu-central-1",
+    "logStream": "354686b9342047c2a05035c91028524b02dbccb45d7b9ddbba69a1b87dd8f245",
+    "cloudwatch_logs.log_group": "h8zgl-hub88_main-pgp",
+    "containerId": "354686b93420",
+    "application": "hub88",
+    "failed_gear": "nil",
+    "file": "lib/hub88/engine/gears/logger/log_proto_response.ex",
+    "function": "call/1",
+    "gears": "[Hub88.Engine.Gears.UpdateProtoResponse, Hub88.Engine.Gears.ProcessInUserQueue, Hub88.Engine.Gears.Transaction.Broadcast, Hub88.Engine.Gears.Transaction.Finalize, Hub88.Engine.Gears.Validator.ProtoResponse, Hub88.Engine.Gears.SendToOperator, Hub88.Engine.Gears.ConvivaStarts, Hub88.Engine.Gears.Transaction.LogSupplierRequestBody, Hub88.Engine.Gears.Transaction.Upsert, Hub88.Engine.Gears.Transaction.CalculateAmount, Hub88.Engine.Gears.Exchange.FetchRate, Hub88.Engine.Gears.Logger.SetRequestId, Hub88.Engine.Gears.Logger.GetRequestId, Hub88.Engine.Gears.Validator.EverythingEnabled, Hub88.Engine.Gears.ResolveGameCode, Hub88.Engine.Gears.ResolveGameId, Hub88.Engine.Gears.FetchSite, Hub88.Engine.Gears.Validator.OperatorSupportsCmd, Hub88.Engine.Gears.Validator.ProtoRequest, Hub88.Engine.Gears.ResolveReferenceTransactionUuid, Hub88.Engine.Gears.V3.BuildProtoRequest, Hub88.Engine.Gears.Transaction.Fetch.ReferenceWithScope.TransactionCommand, Hub88.Engine.Gears.Validator.EnsureSession]",
+    "gl": "#PID<0.4975.0>",
+    "inner_logs": "[\"[SendToOperator]: Operator Called Successfully: {\\\"body\\\":\\\"{\\\\\\\"user\\\\\\\":\\\\\\\"498945\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"RS_OK\\\\\\\",\\\\\\\"request_uuid\\\\\\\":\\\\\\\"5995625f-f5fd-485e-8a3c-e907355c99f6\\\\\\\",\\\\\\\"currency\\\\\\\":\\\\\\\"AED\\\\\\\",\\\\\\\"balance\\\\\\\":124209000}\\\",\\\"status_code\\\":200}\", \"Request have version: 3 and command: transaction\"]",
+    "level": "info",
+    "line": 9,
+    "module": "Elixir.Hub88.Engine.Gears.Logger.LogProtoResponse",
+    "operator": "betbetty.com",
+    "pid": "#PID<0.31431.7418>",
+    "proto_request": {
+      "cmd": "CMD_TRANSACTION",
+      "game_code": "pgp_5lionsmegaways",
+      "game_id": 13315,
+      "info": null,
+      "request_uuid": "5995625f-f5fd-485e-8a3c-e907355c99f6",
+      "token": "4A62B5ED942069BE5D5143D9D64EA626E4DF517A",
+      "transaction": {
+        "amount": 0,
+        "bet": null,
+        "currency": "AED",
+        "freebet_offer_uuid": null,
+        "is_aggregated": false,
+        "is_free": false,
+        "kind": "TK_WIN",
+        "reference_transaction_uuid": "669e94aae840c803435bb815",
+        "reward_uuid": null,
+        "round": "43625126783182",
+        "round_closed": true,
+        "supplier_amount": 0,
+        "supplier_currency": "AED",
+        "supplier_transaction_id": null,
+        "supplier_user": "cg_51859591",
+        "transaction_uuid": "43625126783182_end_round"
+      }
+    },
+    "proto_response": {
+      "balance": 124209000,
+      "currency": "AED",
+      "ext_status": null,
+      "message": null,
+      "request_uuid": "5995625f-f5fd-485e-8a3c-e907355c99f6",
+      "status": "RS_OK",
+      "token": null,
+      "user": "498945"
+    },
+    "request_id": "F-SYsZKWdmumhyIkEKkG",
+    "session": {
+      "country_id": 124,
+      "currency_code": "AED",
+      "currency_id": 95,
+      "game_code": "pgp_5lionsmegaways",
+      "id": 12765312,
+      "operator_id": 339,
+      "operator_token": "6-bzxwdWLZie9if0xTdZKEFpHu68geNgjp7pOUn9eo9mrXB82DZrmXTqrhlSi2Mxr4uJQid3uF9CWZIIRwBA4o07gCQ6ny4FOL8TBbE-J_fRH6zWX2dyRdU7UN9fxoUR2yz93Irve7Q",
+      "supplier_currency_code": "AED",
+      "supplier_token": "4A62B5ED942069BE5D5143D9D64EA626E4DF517A",
+      "user": "498945"
+    },
+    "transaction": {
+      "amount": 0,
+      "attempt": 0,
+      "bet": null,
+      "contract_id": 1759,
+      "exchange_rate": null,
+      "id": 1803996469,
+      "is_free": false,
+      "kind": "TK_WIN",
+      "operator_balance": 124209000,
+      "operator_currency_code": "AED",
+      "reference_transaction_uuid": "669e94aae840c803435bb815",
+      "reward_uuid": null,
+      "round": "43625126783182",
+      "round_closed": true,
+      "session_id": 12765312,
+      "status": "TS_SUCCESS",
+      "supplier_amount": 0,
+      "supplier_currency_code": "AED",
+      "supplier_currency_id": 95,
+      "transaction_uuid": "43625126783182_end_round",
+      "vendor_transaction_uuid": "15478e8d-e778-5bb5-8852-e11eb07c21dc"
+    },
+    "vsn": "3.0.515",
+    "wallet_response_time": 100089
+  },
+  "fields": {
+    "transaction.kind": [
+      "TK_WIN"
+    ],
+    "function.keyword": [
+      "call/1"
+    ],
+    "cloudwatch_logs.log_group.keyword": [
+      "h8zgl-hub88_main-pgp"
+    ],
+    "file.keyword": [
+      "lib/hub88/engine/gears/logger/log_proto_response.ex"
+    ],
+    "session.supplier_currency_code.keyword": [
+      "AED"
+    ],
+    "transaction.id": [
+      1803996469
+    ],
+    "transaction.round_closed": [
+      true
+    ],
+    "proto_request.transaction.round": [
+      "43625126783182"
+    ],
+    "env_name": [
+      "h8zgl"
+    ],
+    "proto_request.transaction.is_aggregated": [
+      false
+    ],
+    "proto_response.request_uuid": [
+      "5995625f-f5fd-485e-8a3c-e907355c99f6"
+    ],
+    "session.game_code.keyword": [
+      "pgp_5lionsmegaways"
+    ],
+    "containerId": [
+      "354686b93420"
+    ],
+    "gears": [
+      "[Hub88.Engine.Gears.UpdateProtoResponse, Hub88.Engine.Gears.ProcessInUserQueue, Hub88.Engine.Gears.Transaction.Broadcast, Hub88.Engine.Gears.Transaction.Finalize, Hub88.Engine.Gears.Validator.ProtoResponse, Hub88.Engine.Gears.SendToOperator, Hub88.Engine.Gears.ConvivaStarts, Hub88.Engine.Gears.Transaction.LogSupplierRequestBody, Hub88.Engine.Gears.Transaction.Upsert, Hub88.Engine.Gears.Transaction.CalculateAmount, Hub88.Engine.Gears.Exchange.FetchRate, Hub88.Engine.Gears.Logger.SetRequestId, Hub88.Engine.Gears.Logger.GetRequestId, Hub88.Engine.Gears.Validator.EverythingEnabled, Hub88.Engine.Gears.ResolveGameCode, Hub88.Engine.Gears.ResolveGameId, Hub88.Engine.Gears.FetchSite, Hub88.Engine.Gears.Validator.OperatorSupportsCmd, Hub88.Engine.Gears.Validator.ProtoRequest, Hub88.Engine.Gears.ResolveReferenceTransactionUuid, Hub88.Engine.Gears.V3.BuildProtoRequest, Hub88.Engine.Gears.Transaction.Fetch.ReferenceWithScope.TransactionCommand, Hub88.Engine.Gears.Validator.EnsureSession]"
+    ],
+    "transaction.operator_currency_code": [
+      "AED"
+    ],
+    "proto_request.transaction.round.keyword": [
+      "43625126783182"
+    ],
+    "proto_request.transaction.supplier_amount": [
+      0
+    ],
+    "module": [
+      "Elixir.Hub88.Engine.Gears.Logger.LogProtoResponse"
+    ],
+    "proto_request.transaction.is_free": [
+      false
+    ],
+    "session.game_code": [
+      "pgp_5lionsmegaways"
+    ],
+    "transaction.vendor_transaction_uuid": [
+      "15478e8d-e778-5bb5-8852-e11eb07c21dc"
+    ],
+    "transaction.supplier_currency_code": [
+      "AED"
+    ],
+    "env_name.keyword": [
+      "h8zgl"
+    ],
+    "proto_request.cmd.keyword": [
+      "CMD_TRANSACTION"
+    ],
+    "session.user": [
+      "498945"
+    ],
+    "proto_request.transaction.currency.keyword": [
+      "AED"
+    ],
+    "proto_request.token.keyword": [
+      "4A62B5ED942069BE5D5143D9D64EA626E4DF517A"
+    ],
+    "transaction.session_id": [
+      12765312
+    ],
+    "vsn": [
+      "3.0.515"
+    ],
+    "pid.keyword": [
+      "#PID<0.31431.7418>"
+    ],
+    "failed_gear.keyword": [
+      "nil"
+    ],
+    "file": [
+      "lib/hub88/engine/gears/logger/log_proto_response.ex"
+    ],
+    "application.keyword": [
+      "hub88"
+    ],
+    "session.currency_code.keyword": [
+      "AED"
+    ],
+    "proto_request.transaction.transaction_uuid": [
+      "43625126783182_end_round"
+    ],
+    "transaction.supplier_amount": [
+      0
+    ],
+    "containerId.keyword": [
+      "354686b93420"
+    ],
+    "session.operator_id": [
+      339
+    ],
+    "aws_region.keyword": [
+      "eu-central-1"
+    ],
+    "proto_request.transaction.supplier_user.keyword": [
+      "cg_51859591"
+    ],
+    "module.keyword": [
+      "Elixir.Hub88.Engine.Gears.Logger.LogProtoResponse"
+    ],
+    "proto_request.transaction.amount": [
+      0
+    ],
+    "session.supplier_token.keyword": [
+      "4A62B5ED942069BE5D5143D9D64EA626E4DF517A"
+    ],
+    "proto_response.status.keyword": [
+      "RS_OK"
+    ],
+    "transaction.transaction_uuid.keyword": [
+      "43625126783182_end_round"
+    ],
+    "logStream.keyword": [
+      "354686b9342047c2a05035c91028524b02dbccb45d7b9ddbba69a1b87dd8f245"
+    ],
+    "transaction.vendor_transaction_uuid.keyword": [
+      "15478e8d-e778-5bb5-8852-e11eb07c21dc"
+    ],
+    "wallet_response_time": [
+      100089
+    ],
+    "@timestamp": [
+      "2024-07-22T17:20:46.188Z"
+    ],
+    "proto_request.transaction.currency": [
+      "AED"
+    ],
+    "transaction.kind.keyword": [
+      "TK_WIN"
+    ],
+    "transaction.round.keyword": [
+      "43625126783182"
+    ],
+    "session.id": [
+      12765312
+    ],
+    "transaction.attempt": [
+      0
+    ],
+    "cloudwatch_logs.log_group": [
+      "h8zgl-hub88_main-pgp"
+    ],
+    "session.country_id": [
+      124
+    ],
+    "proto_request.transaction.round_closed": [
+      true
+    ],
+    "session.operator_token.keyword": [
+      "6-bzxwdWLZie9if0xTdZKEFpHu68geNgjp7pOUn9eo9mrXB82DZrmXTqrhlSi2Mxr4uJQid3uF9CWZIIRwBA4o07gCQ6ny4FOL8TBbE-J_fRH6zWX2dyRdU7UN9fxoUR2yz93Irve7Q"
+    ],
+    "transaction.status.keyword": [
+      "TS_SUCCESS"
+    ],
+    "pid": [
+      "#PID<0.31431.7418>"
+    ],
+    "transaction.reference_transaction_uuid": [
+      "669e94aae840c803435bb815"
+    ],
+    "operator": [
+      "betbetty.com"
+    ],
+    "proto_request.transaction.reference_transaction_uuid": [
+      "669e94aae840c803435bb815"
+    ],
+    "proto_request.transaction.transaction_uuid.keyword": [
+      "43625126783182_end_round"
+    ],
+    "proto_request.transaction.supplier_user": [
+      "cg_51859591"
+    ],
+    "function": [
+      "call/1"
+    ],
+    "proto_response.currency.keyword": [
+      "AED"
+    ],
+    "transaction.supplier_currency_code.keyword": [
+      "AED"
+    ],
+    "proto_request.transaction.supplier_currency": [
+      "AED"
+    ],
+    "transaction.round": [
+      "43625126783182"
+    ],
+    "transaction.status": [
+      "TS_SUCCESS"
+    ],
+    "proto_request.cmd": [
+      "CMD_TRANSACTION"
+    ],
+    "level": [
+      "info"
+    ],
+    "service_name": [
+      "main-pgp"
+    ],
+    "transaction.contract_id": [
+      1759
+    ],
+    "proto_response.user.keyword": [
+      "498945"
+    ],
+    "session.operator_token": [
+      "6-bzxwdWLZie9if0xTdZKEFpHu68geNgjp7pOUn9eo9mrXB82DZrmXTqrhlSi2Mxr4uJQid3uF9CWZIIRwBA4o07gCQ6ny4FOL8TBbE-J_fRH6zWX2dyRdU7UN9fxoUR2yz93Irve7Q"
+    ],
+    "proto_request.request_uuid.keyword": [
+      "5995625f-f5fd-485e-8a3c-e907355c99f6"
+    ],
+    "proto_request.game_code": [
+      "pgp_5lionsmegaways"
+    ],
+    "proto_response.currency": [
+      "AED"
+    ],
+    "proto_response.user": [
+      "498945"
+    ],
+    "transaction.transaction_uuid": [
+      "43625126783182_end_round"
+    ],
+    "proto_request.transaction.supplier_currency.keyword": [
+      "AED"
+    ],
+    "gl.keyword": [
+      "#PID<0.4975.0>"
+    ],
+    "message.keyword": [
+      "Operator request F-SYsZKWdmumhyIkEKkG"
+    ],
+    "failed_gear": [
+      "nil"
+    ],
+    "session.supplier_token": [
+      "4A62B5ED942069BE5D5143D9D64EA626E4DF517A"
+    ],
+    "logStream": [
+      "354686b9342047c2a05035c91028524b02dbccb45d7b9ddbba69a1b87dd8f245"
+    ],
+    "stack_name": [
+      "hub88"
+    ],
+    "proto_request.transaction.kind.keyword": [
+      "TK_WIN"
+    ],
+    "session.supplier_currency_code": [
+      "AED"
+    ],
+    "proto_request.game_code.keyword": [
+      "pgp_5lionsmegaways"
+    ],
+    "stack_name.keyword": [
+      "hub88"
+    ],
+    "transaction.is_free": [
+      false
+    ],
+    "session.user.keyword": [
+      "498945"
+    ],
+    "transaction.supplier_currency_id": [
+      95
+    ],
+    "proto_request.request_uuid": [
+      "5995625f-f5fd-485e-8a3c-e907355c99f6"
+    ],
+    "session.currency_code": [
+      "AED"
+    ],
+    "line": [
+      9
+    ],
+    "proto_response.request_uuid.keyword": [
+      "5995625f-f5fd-485e-8a3c-e907355c99f6"
+    ],
+    "transaction.operator_balance": [
+      124209000
+    ],
+    "transaction.reference_transaction_uuid.keyword": [
+      "669e94aae840c803435bb815"
+    ],
+    "transaction.operator_currency_code.keyword": [
+      "AED"
+    ],
+    "proto_request.game_id": [
+      13315
+    ],
+    "operator.keyword": [
+      "betbetty.com"
+    ],
+    "proto_request.transaction.kind": [
+      "TK_WIN"
+    ],
+    "request_id.keyword": [
+      "F-SYsZKWdmumhyIkEKkG"
+    ],
+    "transaction.amount": [
+      0
+    ],
+    "gl": [
+      "#PID<0.4975.0>"
+    ],
+    "proto_response.status": [
+      "RS_OK"
+    ],
+    "inner_logs": [
+      "[\"[SendToOperator]: Operator Called Successfully: {\\\"body\\\":\\\"{\\\\\\\"user\\\\\\\":\\\\\\\"498945\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"RS_OK\\\\\\\",\\\\\\\"request_uuid\\\\\\\":\\\\\\\"5995625f-f5fd-485e-8a3c-e907355c99f6\\\\\\\",\\\\\\\"currency\\\\\\\":\\\\\\\"AED\\\\\\\",\\\\\\\"balance\\\\\\\":124209000}\\\",\\\"status_code\\\":200}\", \"Request have version: 3 and command: transaction\"]"
+    ],
+    "message": [
+      "Operator request F-SYsZKWdmumhyIkEKkG"
+    ],
+    "proto_request.transaction.reference_transaction_uuid.keyword": [
+      "669e94aae840c803435bb815"
+    ],
+    "proto_response.balance": [
+      124209000
+    ],
+    "level.keyword": [
+      "info"
+    ],
+    "application": [
+      "hub88"
+    ],
+    "aws_region": [
+      "eu-central-1"
+    ],
+    "proto_request.token": [
+      "4A62B5ED942069BE5D5143D9D64EA626E4DF517A"
+    ],
+    "vsn.keyword": [
+      "3.0.515"
+    ],
+    "session.currency_id": [
+      95
+    ],
+    "service_name.keyword": [
+      "main-pgp"
+    ],
+    "request_id": [
+      "F-SYsZKWdmumhyIkEKkG"
+    ]
+  },
+  "ignored_field_values": {
+    "inner_logs.keyword": [
+      "[\"[SendToOperator]: Operator Called Successfully: {\\\"body\\\":\\\"{\\\\\\\"user\\\\\\\":\\\\\\\"498945\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"RS_OK\\\\\\\",\\\\\\\"request_uuid\\\\\\\":\\\\\\\"5995625f-f5fd-485e-8a3c-e907355c99f6\\\\\\\",\\\\\\\"currency\\\\\\\":\\\\\\\"AED\\\\\\\",\\\\\\\"balance\\\\\\\":124209000}\\\",\\\"status_code\\\":200}\", \"Request have version: 3 and command: transaction\"]"
+    ],
+    "gears.keyword": [
+      "[Hub88.Engine.Gears.UpdateProtoResponse, Hub88.Engine.Gears.ProcessInUserQueue, Hub88.Engine.Gears.Transaction.Broadcast, Hub88.Engine.Gears.Transaction.Finalize, Hub88.Engine.Gears.Validator.ProtoResponse, Hub88.Engine.Gears.SendToOperator, Hub88.Engine.Gears.ConvivaStarts, Hub88.Engine.Gears.Transaction.LogSupplierRequestBody, Hub88.Engine.Gears.Transaction.Upsert, Hub88.Engine.Gears.Transaction.CalculateAmount, Hub88.Engine.Gears.Exchange.FetchRate, Hub88.Engine.Gears.Logger.SetRequestId, Hub88.Engine.Gears.Logger.GetRequestId, Hub88.Engine.Gears.Validator.EverythingEnabled, Hub88.Engine.Gears.ResolveGameCode, Hub88.Engine.Gears.ResolveGameId, Hub88.Engine.Gears.FetchSite, Hub88.Engine.Gears.Validator.OperatorSupportsCmd, Hub88.Engine.Gears.Validator.ProtoRequest, Hub88.Engine.Gears.ResolveReferenceTransactionUuid, Hub88.Engine.Gears.V3.BuildProtoRequest, Hub88.Engine.Gears.Transaction.Fetch.ReferenceWithScope.TransactionCommand, Hub88.Engine.Gears.Validator.EnsureSession]"
+    ]
+  }
+}
