@@ -1,0 +1,227 @@
+{
+  "_index": "live-logs:stack-hub88-main-2024.30-007891",
+  "_type": "_doc",
+  "_id": "38394259739339790651550570937215005656844946425898401962",
+  "_version": 1,
+  "_score": 1,
+  "_ignored": [
+    "request_headers.keyword",
+    "request_body.keyword",
+    "response_body.keyword"
+  ],
+  "_source": {
+    "message": "response from endpoint /operator/generic/v2/game/url in 4 ms",
+    "@timestamp": "2024-07-22T14:22:30.772Z",
+    "env_name": "h8zgl",
+    "stack_name": "hub88",
+    "service_name": "main",
+    "aws_region": "eu-central-1",
+    "logStream": "43c52a3bc949e7544a9a02b5284a1b22e37a8e65408ef660edc8d5f182a4e040",
+    "cloudwatch_logs.log_group": "h8zgl-hub88_main",
+    "containerId": "43c52a3bc949",
+    "application": "hub88",
+    "duration": 4049,
+    "file": "lib/hub88_web/plugs/logger.ex",
+    "function": "log_base/2",
+    "gl": "#PID<0.4975.0>",
+    "level": "info",
+    "line": 94,
+    "method": "POST",
+    "module": "Elixir.Hub88Web.Logger",
+    "path": "/operator/generic/v2/game/url",
+    "pid": "#PID<0.9127.1123>",
+    "query_string": "",
+    "request_body": "{\"country\":\"DE\",\"currency\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"display_unit\":null,\"game_code\":\"hbo_12zodiacs\",\"game_currency\":\"\",\"ip\":\"0.0.0.0\",\"lang\":\"en\",\"lobby_url\":\"https://bender-b2b.hub88.io\",\"meta\":{\"recommendation_id\":\"\"},\"platform\":\"GPL_DESKTOP\",\"sub_partner_id\":null,\"token\":\"f1f9735c-8931-47be-b985-1e4504545fce\",\"user\":\"1721657933_UGX\",\"operator_id\":220}",
+    "request_headers": [
+      "content-length:381",
+      "content-type:application/json",
+      "host:api.hub88.io",
+      "user-agent:hackney/1.18.1",
+      "x-amzn-trace-id:Root=1-669e6b26-36ec20243783a39c251dc375",
+      "x-forwarded-for:18.195.113.172",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https",
+      "x-hub88-signature:pjkvrvmKMTsNqNPSVO/zeCam5vElQ9Tyqkep1IH8RjHt0nQBCn00IZstJ30ymMU3HRWwrb7Ag+SP7Fnl4ZKNsYL0a/79lsYPBJZ9U8e1foFiVstxuaFK7k7p7VKoORKsUL222euA/rZ1zPjIXohO7HEnnI5WM975IN/0T6BsgfrqdFT5jeirnaWM5m5WqrNuL99b707Op/DNWmlmJtENCwGcQrxBdxqO2U76mZcDX/TmR/sRHcXL1WFg7un2zFr8MtAd6UH84fhVlOqD5yzXNiphe/WVpvReUJAm3UvRmm5OpB8V9+WrOcU6riV0Yg8herMJzxTpDsVCb9Z38EPGeg=="
+    ],
+    "request_id": "F-SO92Uu4KDkl3IDRlVD",
+    "response_body": "{\"url\":\"https://launcher-eu1.fh8labs.com/games/encrypted/launcher?payload=QTEyOEdDTQ.tiFhtk1Wbc0xM3Q3ZCsdGoNrWOB0iZUBc0lmZp96UulhWDinvBUkJCwRtvM.ePeq5puZ9DO0-XqE.cebHt59Wf9ymTH2J3XOkRLcd4fsN8oOpewFtuEBq5XbXnspkflxa4w6Lk_xOpLWks08wlZZfwtnth7StJkQK-di29uJ4KYDSYe1qTSUbL24YRc_dvJLssIvyJILj0HRm19ZIg3_c0bkQhCYLiSiC9HbEY0KjW7tID0cOMFEFJZgpbFXQp7FoiDxceAeXz5C8K5ZiV4RCqe7Vi6S1kRDZCzXUnWiJO8qcHfVpEdtWFwwPgRTvq4amzj6ZRZr20bkvjnfwqQ4dADt81pDyxaLmg_cbRYXAB9FrBl7GepLnuKQ9MYlF8F3YOVOQA_UtVVG39dRb_OOV3mRO5L6yvofoODS6FC1Nji5Kc-aHP2Adrko_UHe-iGgAHwPCwzNv0QoAZcriOljVoypNGYNeOfGRlkOxZMdjhbVgdClDPLTLHQek0Hp7WymMyfKbolusleVQ_8N9U2DvyvS4CxiSSuBza7bAsQVWo5Rjk9idGsYynJSvur1gJwWKMO8.aVazro9oEp7EjCClKtpSQQ\"}",
+    "response_duration": 4,
+    "status": 200,
+    "vsn": "3.0.515"
+  },
+  "fields": {
+    "function.keyword": [
+      "log_base/2"
+    ],
+    "cloudwatch_logs.log_group": [
+      "h8zgl-hub88_main"
+    ],
+    "cloudwatch_logs.log_group.keyword": [
+      "h8zgl-hub88_main"
+    ],
+    "response_body": [
+      "{\"url\":\"https://launcher-eu1.fh8labs.com/games/encrypted/launcher?payload=QTEyOEdDTQ.tiFhtk1Wbc0xM3Q3ZCsdGoNrWOB0iZUBc0lmZp96UulhWDinvBUkJCwRtvM.ePeq5puZ9DO0-XqE.cebHt59Wf9ymTH2J3XOkRLcd4fsN8oOpewFtuEBq5XbXnspkflxa4w6Lk_xOpLWks08wlZZfwtnth7StJkQK-di29uJ4KYDSYe1qTSUbL24YRc_dvJLssIvyJILj0HRm19ZIg3_c0bkQhCYLiSiC9HbEY0KjW7tID0cOMFEFJZgpbFXQp7FoiDxceAeXz5C8K5ZiV4RCqe7Vi6S1kRDZCzXUnWiJO8qcHfVpEdtWFwwPgRTvq4amzj6ZRZr20bkvjnfwqQ4dADt81pDyxaLmg_cbRYXAB9FrBl7GepLnuKQ9MYlF8F3YOVOQA_UtVVG39dRb_OOV3mRO5L6yvofoODS6FC1Nji5Kc-aHP2Adrko_UHe-iGgAHwPCwzNv0QoAZcriOljVoypNGYNeOfGRlkOxZMdjhbVgdClDPLTLHQek0Hp7WymMyfKbolusleVQ_8N9U2DvyvS4CxiSSuBza7bAsQVWo5Rjk9idGsYynJSvur1gJwWKMO8.aVazro9oEp7EjCClKtpSQQ\"}"
+    ],
+    "pid": [
+      "#PID<0.9127.1123>"
+    ],
+    "file.keyword": [
+      "lib/hub88_web/plugs/logger.ex"
+    ],
+    "path": [
+      "/operator/generic/v2/game/url"
+    ],
+    "env_name": [
+      "h8zgl"
+    ],
+    "function": [
+      "log_base/2"
+    ],
+    "containerId": [
+      "43c52a3bc949"
+    ],
+    "response_duration": [
+      4
+    ],
+    "request_headers.keyword": [
+      "content-length:381",
+      "content-type:application/json",
+      "host:api.hub88.io",
+      "user-agent:hackney/1.18.1",
+      "x-amzn-trace-id:Root=1-669e6b26-36ec20243783a39c251dc375",
+      "x-forwarded-for:18.195.113.172",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "method": [
+      "POST"
+    ],
+    "level": [
+      "info"
+    ],
+    "service_name": [
+      "main"
+    ],
+    "module": [
+      "Elixir.Hub88Web.Logger"
+    ],
+    "query_string.keyword": [
+      ""
+    ],
+    "gl.keyword": [
+      "#PID<0.4975.0>"
+    ],
+    "message.keyword": [
+      "response from endpoint /operator/generic/v2/game/url in 4 ms"
+    ],
+    "request_headers": [
+      "content-length:381",
+      "content-type:application/json",
+      "host:api.hub88.io",
+      "user-agent:hackney/1.18.1",
+      "x-amzn-trace-id:Root=1-669e6b26-36ec20243783a39c251dc375",
+      "x-forwarded-for:18.195.113.172",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https",
+      "x-hub88-signature:pjkvrvmKMTsNqNPSVO/zeCam5vElQ9Tyqkep1IH8RjHt0nQBCn00IZstJ30ymMU3HRWwrb7Ag+SP7Fnl4ZKNsYL0a/79lsYPBJZ9U8e1foFiVstxuaFK7k7p7VKoORKsUL222euA/rZ1zPjIXohO7HEnnI5WM975IN/0T6BsgfrqdFT5jeirnaWM5m5WqrNuL99b707Op/DNWmlmJtENCwGcQrxBdxqO2U76mZcDX/TmR/sRHcXL1WFg7un2zFr8MtAd6UH84fhVlOqD5yzXNiphe/WVpvReUJAm3UvRmm5OpB8V9+WrOcU6riV0Yg8herMJzxTpDsVCb9Z38EPGeg=="
+    ],
+    "logStream": [
+      "43c52a3bc949e7544a9a02b5284a1b22e37a8e65408ef660edc8d5f182a4e040"
+    ],
+    "stack_name": [
+      "hub88"
+    ],
+    "status": [
+      200
+    ],
+    "stack_name.keyword": [
+      "hub88"
+    ],
+    "env_name.keyword": [
+      "h8zgl"
+    ],
+    "line": [
+      94
+    ],
+    "duration": [
+      4049
+    ],
+    "vsn": [
+      "3.0.515"
+    ],
+    "pid.keyword": [
+      "#PID<0.9127.1123>"
+    ],
+    "file": [
+      "lib/hub88_web/plugs/logger.ex"
+    ],
+    "application.keyword": [
+      "hub88"
+    ],
+    "method.keyword": [
+      "POST"
+    ],
+    "containerId.keyword": [
+      "43c52a3bc949"
+    ],
+    "request_id.keyword": [
+      "F-SO92Uu4KDkl3IDRlVD"
+    ],
+    "gl": [
+      "#PID<0.4975.0>"
+    ],
+    "aws_region.keyword": [
+      "eu-central-1"
+    ],
+    "module.keyword": [
+      "Elixir.Hub88Web.Logger"
+    ],
+    "message": [
+      "response from endpoint /operator/generic/v2/game/url in 4 ms"
+    ],
+    "logStream.keyword": [
+      "43c52a3bc949e7544a9a02b5284a1b22e37a8e65408ef660edc8d5f182a4e040"
+    ],
+    "@timestamp": [
+      "2024-07-22T14:22:30.772Z"
+    ],
+    "level.keyword": [
+      "info"
+    ],
+    "request_body": [
+      "{\"country\":\"DE\",\"currency\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"display_unit\":null,\"game_code\":\"hbo_12zodiacs\",\"game_currency\":\"\",\"ip\":\"0.0.0.0\",\"lang\":\"en\",\"lobby_url\":\"https://bender-b2b.hub88.io\",\"meta\":{\"recommendation_id\":\"\"},\"platform\":\"GPL_DESKTOP\",\"sub_partner_id\":null,\"token\":\"f1f9735c-8931-47be-b985-1e4504545fce\",\"user\":\"1721657933_UGX\",\"operator_id\":220}"
+    ],
+    "application": [
+      "hub88"
+    ],
+    "aws_region": [
+      "eu-central-1"
+    ],
+    "vsn.keyword": [
+      "3.0.515"
+    ],
+    "service_name.keyword": [
+      "main"
+    ],
+    "request_id": [
+      "F-SO92Uu4KDkl3IDRlVD"
+    ],
+    "query_string": [
+      ""
+    ],
+    "path.keyword": [
+      "/operator/generic/v2/game/url"
+    ]
+  },
+  "ignored_field_values": {
+    "request_headers.keyword": [
+      "x-hub88-signature:pjkvrvmKMTsNqNPSVO/zeCam5vElQ9Tyqkep1IH8RjHt0nQBCn00IZstJ30ymMU3HRWwrb7Ag+SP7Fnl4ZKNsYL0a/79lsYPBJZ9U8e1foFiVstxuaFK7k7p7VKoORKsUL222euA/rZ1zPjIXohO7HEnnI5WM975IN/0T6BsgfrqdFT5jeirnaWM5m5WqrNuL99b707Op/DNWmlmJtENCwGcQrxBdxqO2U76mZcDX/TmR/sRHcXL1WFg7un2zFr8MtAd6UH84fhVlOqD5yzXNiphe/WVpvReUJAm3UvRmm5OpB8V9+WrOcU6riV0Yg8herMJzxTpDsVCb9Z38EPGeg=="
+    ],
+    "response_body.keyword": [
+      "{\"url\":\"https://launcher-eu1.fh8labs.com/games/encrypted/launcher?payload=QTEyOEdDTQ.tiFhtk1Wbc0xM3Q3ZCsdGoNrWOB0iZUBc0lmZp96UulhWDinvBUkJCwRtvM.ePeq5puZ9DO0-XqE.cebHt59Wf9ymTH2J3XOkRLcd4fsN8oOpewFtuEBq5XbXnspkflxa4w6Lk_xOpLWks08wlZZfwtnth7StJkQK-di29uJ4KYDSYe1qTSUbL24YRc_dvJLssIvyJILj0HRm19ZIg3_c0bkQhCYLiSiC9HbEY0KjW7tID0cOMFEFJZgpbFXQp7FoiDxceAeXz5C8K5ZiV4RCqe7Vi6S1kRDZCzXUnWiJO8qcHfVpEdtWFwwPgRTvq4amzj6ZRZr20bkvjnfwqQ4dADt81pDyxaLmg_cbRYXAB9FrBl7GepLnuKQ9MYlF8F3YOVOQA_UtVVG39dRb_OOV3mRO5L6yvofoODS6FC1Nji5Kc-aHP2Adrko_UHe-iGgAHwPCwzNv0QoAZcriOljVoypNGYNeOfGRlkOxZMdjhbVgdClDPLTLHQek0Hp7WymMyfKbolusleVQ_8N9U2DvyvS4CxiSSuBza7bAsQVWo5Rjk9idGsYynJSvur1gJwWKMO8.aVazro9oEp7EjCClKtpSQQ\"}"
+    ],
+    "request_body.keyword": [
+      "{\"country\":\"DE\",\"currency\":\"UGX\",\"deposit_url\":\"https://bender-b2b.hub88.io\",\"display_unit\":null,\"game_code\":\"hbo_12zodiacs\",\"game_currency\":\"\",\"ip\":\"0.0.0.0\",\"lang\":\"en\",\"lobby_url\":\"https://bender-b2b.hub88.io\",\"meta\":{\"recommendation_id\":\"\"},\"platform\":\"GPL_DESKTOP\",\"sub_partner_id\":null,\"token\":\"f1f9735c-8931-47be-b985-1e4504545fce\",\"user\":\"1721657933_UGX\",\"operator_id\":220}"
+    ]
+  }
+}

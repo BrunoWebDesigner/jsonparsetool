@@ -1,0 +1,220 @@
+{
+  "_index": "live-logs:stack-hub88-main-pgsoft-2024.30-000674",
+  "_type": "_doc",
+  "_id": "38394498262847458268242478671580404409312653398225650054",
+  "_version": 1,
+  "_score": 1,
+  "_ignored": [
+    "request_body.keyword"
+  ],
+  "_source": {
+    "message": "response from endpoint /supplier/pgsoft/Cash/TransferIn in 390 ms",
+    "@timestamp": "2024-07-22T17:20:46.536Z",
+    "env_name": "h8zgl",
+    "stack_name": "hub88",
+    "service_name": "main-pgsoft",
+    "aws_region": "eu-central-1",
+    "logStream": "9fbb9e0e09ab9ee897664216351dd6c18aee27abd9bd35b543851f69574f6ac3",
+    "cloudwatch_logs.log_group": "h8zgl-hub88_main-pgsoft",
+    "containerId": "9fbb9e0e09ab",
+    "application": "hub88",
+    "duration": 390363,
+    "file": "lib/hub88_web/plugs/logger.ex",
+    "function": "log_base/2",
+    "gl": "#PID<0.4975.0>",
+    "level": "info",
+    "line": 94,
+    "method": "POST",
+    "module": "Elixir.Hub88Web.Logger",
+    "path": "/supplier/pgsoft/Cash/TransferIn",
+    "pid": "#PID<0.15657.2977>",
+    "query_string": "trace_id=NJBJES22",
+    "request_body": "operator_token=20A191FD-873F-4CCD-9B1E-AA20250A2756&secret_key=FFB307BB3CA741ECAF8A5F17EE2E664B&operator_player_session=F4B4199FEA0C591C3DF459F893354CAAFBCBC9B1&game_id=83&parent_bet_id=1815436836718379010&bet_id=1815436836718379010&player_name=cg_43798859&currency_code=BRL&transfer_amount=0.00&transaction_id=1815436836718379010-1815436836718379010-101-0&bet_transaction_id=1815436836718379010-1815436836718379010-201-0&wallet_type=C&bet_type=1&updated_time=1721668845705&is_end_round=True&is_feature=False&is_minus_count=False&is_wager=True&platform=4&create_time=1721668845705&is_parent_zero_stake=False&jackpot_rtp_contribution_amount=0&jackpot_win_amount=0&jackpot_pool_id=0&jackpot_type=0",
+    "request_headers": [
+      "content-length:695",
+      "content-type:application/x-www-form-urlencoded",
+      "host:api.hub88.io",
+      "request-id:|788e37f5-41007560dabb645d.2.",
+      "x-amzn-trace-id:Root=1-669e94ee-13846f2b7e3bfae31ea0a92d",
+      "x-forwarded-for:8.208.80.248",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "request_id": "F-SYsZtg4Lm11lssv26D",
+    "response_body": "{\"data\":{\"balance_amount\":43.69,\"currency_code\":\"BRL\",\"updated_time\":\"1721668845705\"},\"error\":null}",
+    "response_duration": 390,
+    "status": 200,
+    "vsn": "3.0.515"
+  },
+  "fields": {
+    "function.keyword": [
+      "log_base/2"
+    ],
+    "cloudwatch_logs.log_group": [
+      "h8zgl-hub88_main-pgsoft"
+    ],
+    "response_body": [
+      "{\"data\":{\"balance_amount\":43.69,\"currency_code\":\"BRL\",\"updated_time\":\"1721668845705\"},\"error\":null}"
+    ],
+    "cloudwatch_logs.log_group.keyword": [
+      "h8zgl-hub88_main-pgsoft"
+    ],
+    "pid": [
+      "#PID<0.15657.2977>"
+    ],
+    "file.keyword": [
+      "lib/hub88_web/plugs/logger.ex"
+    ],
+    "path": [
+      "/supplier/pgsoft/Cash/TransferIn"
+    ],
+    "env_name": [
+      "h8zgl"
+    ],
+    "function": [
+      "log_base/2"
+    ],
+    "containerId": [
+      "9fbb9e0e09ab"
+    ],
+    "response_duration": [
+      390
+    ],
+    "request_headers.keyword": [
+      "content-length:695",
+      "content-type:application/x-www-form-urlencoded",
+      "host:api.hub88.io",
+      "request-id:|788e37f5-41007560dabb645d.2.",
+      "x-amzn-trace-id:Root=1-669e94ee-13846f2b7e3bfae31ea0a92d",
+      "x-forwarded-for:8.208.80.248",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "method": [
+      "POST"
+    ],
+    "level": [
+      "info"
+    ],
+    "service_name": [
+      "main-pgsoft"
+    ],
+    "module": [
+      "Elixir.Hub88Web.Logger"
+    ],
+    "query_string.keyword": [
+      "trace_id=NJBJES22"
+    ],
+    "response_body.keyword": [
+      "{\"data\":{\"balance_amount\":43.69,\"currency_code\":\"BRL\",\"updated_time\":\"1721668845705\"},\"error\":null}"
+    ],
+    "gl.keyword": [
+      "#PID<0.4975.0>"
+    ],
+    "message.keyword": [
+      "response from endpoint /supplier/pgsoft/Cash/TransferIn in 390 ms"
+    ],
+    "request_headers": [
+      "content-length:695",
+      "content-type:application/x-www-form-urlencoded",
+      "host:api.hub88.io",
+      "request-id:|788e37f5-41007560dabb645d.2.",
+      "x-amzn-trace-id:Root=1-669e94ee-13846f2b7e3bfae31ea0a92d",
+      "x-forwarded-for:8.208.80.248",
+      "x-forwarded-port:443",
+      "x-forwarded-proto:https"
+    ],
+    "logStream": [
+      "9fbb9e0e09ab9ee897664216351dd6c18aee27abd9bd35b543851f69574f6ac3"
+    ],
+    "stack_name": [
+      "hub88"
+    ],
+    "status": [
+      200
+    ],
+    "stack_name.keyword": [
+      "hub88"
+    ],
+    "env_name.keyword": [
+      "h8zgl"
+    ],
+    "line": [
+      94
+    ],
+    "duration": [
+      390363
+    ],
+    "vsn": [
+      "3.0.515"
+    ],
+    "pid.keyword": [
+      "#PID<0.15657.2977>"
+    ],
+    "file": [
+      "lib/hub88_web/plugs/logger.ex"
+    ],
+    "application.keyword": [
+      "hub88"
+    ],
+    "method.keyword": [
+      "POST"
+    ],
+    "containerId.keyword": [
+      "9fbb9e0e09ab"
+    ],
+    "request_id.keyword": [
+      "F-SYsZtg4Lm11lssv26D"
+    ],
+    "gl": [
+      "#PID<0.4975.0>"
+    ],
+    "aws_region.keyword": [
+      "eu-central-1"
+    ],
+    "module.keyword": [
+      "Elixir.Hub88Web.Logger"
+    ],
+    "message": [
+      "response from endpoint /supplier/pgsoft/Cash/TransferIn in 390 ms"
+    ],
+    "logStream.keyword": [
+      "9fbb9e0e09ab9ee897664216351dd6c18aee27abd9bd35b543851f69574f6ac3"
+    ],
+    "@timestamp": [
+      "2024-07-22T17:20:46.536Z"
+    ],
+    "level.keyword": [
+      "info"
+    ],
+    "request_body": [
+      "operator_token=20A191FD-873F-4CCD-9B1E-AA20250A2756&secret_key=FFB307BB3CA741ECAF8A5F17EE2E664B&operator_player_session=F4B4199FEA0C591C3DF459F893354CAAFBCBC9B1&game_id=83&parent_bet_id=1815436836718379010&bet_id=1815436836718379010&player_name=cg_43798859&currency_code=BRL&transfer_amount=0.00&transaction_id=1815436836718379010-1815436836718379010-101-0&bet_transaction_id=1815436836718379010-1815436836718379010-201-0&wallet_type=C&bet_type=1&updated_time=1721668845705&is_end_round=True&is_feature=False&is_minus_count=False&is_wager=True&platform=4&create_time=1721668845705&is_parent_zero_stake=False&jackpot_rtp_contribution_amount=0&jackpot_win_amount=0&jackpot_pool_id=0&jackpot_type=0"
+    ],
+    "application": [
+      "hub88"
+    ],
+    "aws_region": [
+      "eu-central-1"
+    ],
+    "vsn.keyword": [
+      "3.0.515"
+    ],
+    "service_name.keyword": [
+      "main-pgsoft"
+    ],
+    "request_id": [
+      "F-SYsZtg4Lm11lssv26D"
+    ],
+    "query_string": [
+      "trace_id=NJBJES22"
+    ],
+    "path.keyword": [
+      "/supplier/pgsoft/Cash/TransferIn"
+    ]
+  },
+  "ignored_field_values": {
+    "request_body.keyword": [
+      "operator_token=20A191FD-873F-4CCD-9B1E-AA20250A2756&secret_key=FFB307BB3CA741ECAF8A5F17EE2E664B&operator_player_session=F4B4199FEA0C591C3DF459F893354CAAFBCBC9B1&game_id=83&parent_bet_id=1815436836718379010&bet_id=1815436836718379010&player_name=cg_43798859&currency_code=BRL&transfer_amount=0.00&transaction_id=1815436836718379010-1815436836718379010-101-0&bet_transaction_id=1815436836718379010-1815436836718379010-201-0&wallet_type=C&bet_type=1&updated_time=1721668845705&is_end_round=True&is_feature=False&is_minus_count=False&is_wager=True&platform=4&create_time=1721668845705&is_parent_zero_stake=False&jackpot_rtp_contribution_amount=0&jackpot_win_amount=0&jackpot_pool_id=0&jackpot_type=0"
+    ]
+  }
+}
