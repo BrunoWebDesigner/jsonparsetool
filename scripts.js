@@ -7,7 +7,9 @@ function parseLog() {
         // Extract and display parameters
         document.getElementById('request_id_value').innerText = logData.request_id || 'N/A';
         document.getElementById('user_value').innerText = (logData.request_body && JSON.parse(logData.request_body).user) || 'N/A';
-        document.getElementById('type_value').innerText = logData.type || 'N/A';
+        document.getElementById('status_value').innerText = logData.status || 'N/A';
+        document.getElementById('request_body_value').innerText = logData.request_body || 'N/A';
+        document.getElementById('response_body_value').innerText = logData.response_body || 'N/A';
         
         // Format and display the JSON log
         output.innerHTML = formatJSON(logData);
@@ -16,7 +18,9 @@ function parseLog() {
         // Clear parameters if invalid JSON
         document.getElementById('request_id_value').innerText = 'N/A';
         document.getElementById('user_value').innerText = 'N/A';
-        document.getElementById('type_value').innerText = 'N/A';
+        document.getElementById('status_value').innerText = 'N/A';
+        document.getElementById('request_body_value').innerText = 'N/A';
+        document.getElementById('response_body_value').innerText = 'N/A';
     }
 }
 

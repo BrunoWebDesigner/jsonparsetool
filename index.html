@@ -12,9 +12,13 @@
         <textarea id="logInput" placeholder='Paste your JSON log here'></textarea>
         <button onclick="parseLog()">Parse Log</button>
         <div class="info-section">
-            <div id="request_id" class="info-box"><span>Request ID:</span> <span id="request_id_value"></span></div>
-            <div id="user" class="info-box"><span>User:</span> <span id="user_value"></span></div>
-            <div id="status" class="info-box"><span>status:</span> <span id="status_value"></span></div>
+            <div class="info-row">
+                <div id="request_id" class="info-box"><span>Request ID:</span> <span id="request_id_value"></span></div>
+                <div id="user" class="info-box"><span>User:</span> <span id="user_value"></span></div>
+                <div id="status" class="info-box"><span>Status:</span> <span id="status_value"></span></div>
+            </div>
+            <div id="request_body" class="info-box"><span>Request Body:</span> <p id="request_body_value"></p></div>
+            <div id="response_body" class="info-box"><span>Response Body:</span> <p id="response_body_value"></p></div>
         </div>
         <div id="logOutput" class="log-display"></div>
     </div>
